@@ -8,12 +8,32 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LINESeedKR-l';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
 .App-logo {
-  height: 20vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
 .App-header {
+}
+.Form h2,a,input,div{
+  font-family: 'LINESeedKr-Bd';
+}
+
+.Form h2{
+  font-size: 1.2em;
 }
 
 .Form {
@@ -29,6 +49,14 @@
   color: black;
   padding: 4rem 3rem 4rem 3rem;
 }
+.Form a {
+  color: #ce4646;
+  text-decoration : underline;
+  font-size: 0.5em;
+}
+.Form a:hover {
+  color: #cd7171;
+}
 
 .Form .Content {
   margin: 1rem
@@ -36,6 +64,21 @@
 
 .App-link {
   color: #61dafb;
+}
+.copyright {
+  position: fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.github {
+  position: fixed;
+  display: flex;
+  bottom:1rem;
+  right:1rem;
+
 }
 
 @media screen and (max-width:599px) {
